@@ -1,9 +1,11 @@
 header {
-    width: 95%;
+    width: 90%;
     margin-inline: auto;
+    margin-top: 80px;
     display: flex;
     color: white;
-    gap: 40px;
+    gap: 10%;
+    position: relative;
 }
 
 .first-col {
@@ -43,7 +45,6 @@ header {
     }
 
     .page-numbers {
-        font-family: 'Roboto', sans-serif;
         .current-num {
             color: $primary-color;
             font-size: 32px;
@@ -61,3 +62,111 @@ header {
     }
 }
 
+
+.header-text {
+    width: 50%;
+    .header-heading {
+        font-size: 7em;
+        color: $primary-color;
+        margin: 30px 0px;
+        span {
+            display: block;
+            color: white;
+            font-size: 4rem;
+        }
+    }
+
+    .header-paragraph {
+        color: rgba($color: #ffffff, $alpha: 0.6);
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    .header-btn {
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 168px;
+        height: 44px;
+        background: none;
+        border: 1px solid $btn-bg-color;
+        border-radius: 3px;
+        color: $btn-bg-color;
+        cursor: pointer;
+
+        &:hover {
+            background: $btn-bg-color;
+            color: black;
+            transition: background ease .2s;
+        }
+    }
+}
+
+.header-image {
+    width: 30%;
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1310px){
+    .header-heading {
+        font-size: 5rem !important;
+
+        span {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    header {
+        gap: 5%;
+    }
+    .header-heading {
+        font-size: 4rem !important;
+
+        span {
+            font-size: 2rem !important;
+        }
+    }
+} 
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+    // Hide the first column
+    .first-col {
+        display: none;
+    }
+
+    // Position the image behind the text and center the text
+    header {
+        margin-top: 50px;
+        width: 98%;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .header-text {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        z-index: 5;
+
+        &::before {
+            content: "";
+            background-image: url('../assets/photo.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+            opacity: 0.2;
+        }
+    }
+}
