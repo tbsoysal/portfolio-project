@@ -167,6 +167,18 @@ header {
             left:0;
             bottom:0;
             opacity: 0.2;
+            z-index: -1;
         }
     }
+
+    .scroll {
+        display: none !important;
+    }
+}
+
+.scroll {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

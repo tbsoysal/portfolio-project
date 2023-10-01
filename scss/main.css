@@ -315,5 +315,67 @@ header {
     left: 0;
     bottom: 0;
     opacity: 0.2;
+    z-index: -1;
+  }
+  .scroll {
+    display: none !important;
+  }
+}
+.scroll {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section {
+  width: 85%;
+  margin-inline: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.skills-section h2 {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.skills-container figure {
+  color: white;
+  text-align: center;
+}
+.skills-container figure img {
+  height: 120px;
+  margin-bottom: 10px;
+}
+.skills-container figure figcaption {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.skills-container figure p {
+  color: #d9d9d9;
+}
+
+@media screen and (max-width: 1140px) {
+  .skills-section h2 {
+    font-size: 28px;
+    text-align: start;
+  }
+  .skills-container {
+    overflow-x: scroll;
+    display: flex;
+  }
+  .skills-container img {
+    height: 80px !important;
+  }
+  .skills-container figcaption {
+    font-size: 1rem !important;
+  }
+  .skills-container p {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
