@@ -49,6 +49,14 @@
         overflow-x: scroll;
         display: flex;
 
+        figure {
+            margin-inline: 25px;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+        }
+
         img {
             height: 80px !important;
         }

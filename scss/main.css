@@ -369,6 +369,12 @@ header {
     overflow-x: scroll;
     display: flex;
   }
+  .skills-container figure {
+    margin-inline: 25px;
+  }
+  .skills-container figure:first-of-type {
+    margin-left: 0;
+  }
   .skills-container img {
     height: 80px !important;
   }
