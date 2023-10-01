@@ -76,3 +76,25 @@
         }
     }
 }
+
+.mobile-links {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .text-column {
+        display: none !important;
+    }
+
+    .projects-column {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .project {
+            border: 5px solid #424242;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    }
+}
