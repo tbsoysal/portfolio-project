@@ -1,8 +1,6 @@
 .skills-section {
     width: 85%;
-    margin-inline: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
 
     h2 {
         color: white;
@@ -46,8 +44,8 @@
     }
 
     .skills-container {
-        overflow-x: scroll;
         display: flex;
+        overflow-x: scroll;
 
         figure {
             margin-inline: 25px;

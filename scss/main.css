@@ -330,9 +330,7 @@ header {
 
 .skills-section {
   width: 85%;
-  margin-inline: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto;
 }
 .skills-section h2 {
   color: white;
@@ -366,8 +364,8 @@ header {
     text-align: start;
   }
   .skills-container {
-    overflow-x: scroll;
     display: flex;
+    overflow-x: scroll;
   }
   .skills-container figure {
     margin-inline: 25px;
