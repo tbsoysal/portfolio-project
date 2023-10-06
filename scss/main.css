@@ -470,7 +470,7 @@ header {
 }
 .about-section {
   margin-top: 100px;
-  width: 90%;
+  width: 70%;
   margin-inline: auto;
   display: flex;
   color: black;
@@ -478,8 +478,8 @@ header {
 }
 
 .image-container {
-  width: 800px;
   z-index: 5;
+  width: 800px;
 }
 .image-container img {
   width: 100%;
@@ -487,15 +487,12 @@ header {
 
 .info-container {
   background-color: #F2E970;
-  padding-left: 50px;
-  padding-right: 10px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
   left: -20px;
   z-index: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 50px;
 }
 .info-container h3 {
   margin: 0;
@@ -523,7 +520,7 @@ header {
   .info-container {
     left: 0;
     top: -50px;
-    padding: 15px;
+    padding: 30px;
     padding-top: 80px;
     border-radius: 50px;
   }
