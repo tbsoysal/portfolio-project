@@ -3,6 +3,7 @@
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .text-column {
@@ -83,9 +84,14 @@
 
     .portfolio-section {
         justify-content: center;
+        flex-direction: column;
     }
 
-    .text-column {
+    .text-column h2 {
+        font-size: 28px;
+    }
+
+    .text-column-paragraph, .links {
         display: none !important;
     }
 
