@@ -631,7 +631,7 @@ header {
 @media screen and (max-width: 1270px) {
   .blog-section {
     flex-direction: column;
-    gap: 200px;
+    gap: 50px;
     margin-top: 100px;
   }
   .blog-section .text-content {
@@ -639,7 +639,15 @@ header {
   }
 }
 @media screen and (max-width: 700px) {
-  .blog {
-    max-width: 90%;
+  body {
+    overflow-x: hidden;
+  }
+  .blogs {
+    width: 125%;
+    overflow: scroll;
+    padding-top: 150px;
+  }
+  .blog__info {
+    width: 250px;
   }
 }/*# sourceMappingURL=main.css.map */
