@@ -1,6 +1,10 @@
 $btn-bg-color: #FCDA39;
 $primary-color: #ECE138;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;;
     font-family: 'Roboto', sans-serif;
