@@ -258,6 +258,8 @@ header {
   border-radius: 3px;
   color: #FCDA39;
   cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 .header-text .header-btn:hover {
   background: #FCDA39;

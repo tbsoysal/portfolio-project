@@ -93,6 +93,8 @@ header {
         border-radius: 3px;
         color: $btn-bg-color;
         cursor: pointer;
+        padding: 10px 20px;
+        text-decoration: none;
 
         &:hover {
             background: $btn-bg-color;
