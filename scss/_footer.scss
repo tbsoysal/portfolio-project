@@ -1,0 +1,32 @@
+.bottom-links {
+    display: flex;
+    color: #a0a0a0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #070707;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+footer {
+
+    nav {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    footer {
+
+        nav {
+            display: none !important;
+        }
+
+        .bottom-links {
+            flex-direction: column-reverse;
+        }
+    }
+}

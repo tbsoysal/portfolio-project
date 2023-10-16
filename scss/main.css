@@ -2,6 +2,7 @@
 body {
   background-color: #000;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -769,5 +770,29 @@ header {
   }
   .text-content h2 {
     position: static !important;
+  }
+}
+.bottom-links {
+  display: flex;
+  color: #a0a0a0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #070707;
+}
+.bottom-links a {
+  color: #ECE138;
+  text-decoration: none;
+}
+
+footer nav {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 785px) {
+  footer nav {
+    display: none !important;
+  }
+  footer .bottom-links {
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=main.css.map */
