@@ -194,6 +194,7 @@ header {
   padding: 0;
 }
 .first-col .bullets li {
+  cursor: pointer;
   list-style-type: none;
   width: 7px;
   height: 7px;
