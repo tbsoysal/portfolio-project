@@ -438,11 +438,13 @@ header {
 .projects-column {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
   gap: 10px;
 }
 .projects-column .project {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .projects-column .project:hover {
   transition: all ease-in-out 0.5s;
@@ -465,7 +467,8 @@ header {
   .text-column h2 {
     font-size: 28px;
   }
-  .text-column-paragraph, .links {
+  .text-column-paragraph,
+  .links {
     display: none !important;
   }
   .projects-column {
